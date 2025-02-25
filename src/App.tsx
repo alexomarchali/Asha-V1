@@ -32,7 +32,7 @@ export default function App() {
                 {/* Adjusted left padding for main content */}
                 <main className="p-3 sm:p-6 ml-16 transition-all duration-200">
                   <Routes>
-                    <Route path="/" element={<Navigate to="/laptops" replace />} />
+                  <Route path="/" element={<LaptopList />} />
                     <Route path="/laptops" element={<LaptopList />} />
                     <Route path="/laptops/:id" element={<LaptopDetail />} />
                     <Route path="/laptops/create" element={<LaptopCreate />} />
